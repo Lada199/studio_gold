@@ -1,0 +1,139 @@
+.form{
+    margin-top: 180px;
+    text-align: center;
+   &__descr{
+        margin-top: 32px;
+        color: $gray;
+        font-size: 32px;
+        font-weight: 500;
+   }
+    &__wrapper{
+        margin-top: 72px;
+        display: flex;
+        justify-content: space-between;
+        height: 992px;
+        border-radius: 80px;
+        border: 2px solid var(--bg, #FFECEE);
+        background:  #FFF;
+        box-shadow: 0px 15px 44px 0px rgba(13, 15, 28, 0.06);
+        position: relative;
+
+    }
+    form{
+        text-align: left;
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        padding: 48px  80px 48px 120px;
+        input,  textarea{
+            color: $gray;
+            margin-bottom: 24px;
+            width: 560px;
+            padding: 20px 40px;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 40px;
+            border-radius: 40px;
+            border: 2px solid  #FFECEE;
+            outline: none;
+            transition: .3s all;
+            cursor: pointer;
+            &:hover{
+                border: 2px solid  $main-color;
+            }
+            &:focus{
+                border: 2px solid  $main-color;
+            }
+        }
+        textarea{
+            margin-bottom: 24px;
+        }
+    }
+    &__subtitle{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    &__text{
+        color: $gray;
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 32px;
+    }
+    &__img{
+        width: 50%;
+        border-radius: 0 80px 80px 0;
+        img{
+            border-radius: 0 80px 80px 0;
+            width: 100%;
+            height: 100%;
+        }
+        // background: $main-color;
+    }
+    .input__wrapper {
+        width: 100%;
+        position: relative;
+        margin-top: 14px;
+
+      }
+      .input__file {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+      }
+      .input__file-icon-wrapper{
+        span{
+            color: $main-color;
+            font-size: 20px;
+        }
+        svg{
+            margin-right: 10px;
+        }
+        margin-right: 16px;
+        cursor: pointer;
+        padding: 16px 32px;
+        border-radius: 80px;
+        border: 2px solid  $main-color;
+      }
+      .input__file-button-text{
+        color: $gray;
+        font-size: 20px;
+        font-weight: 300;
+      }
+      .input-checkbox{
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+      }
+      .input-checkbox-label{
+        margin-top: 30px;
+        position: relative;
+        color: $gray;
+        padding-left: 40px;
+        font-size: 20px;
+        font-weight: 300;
+        cursor: pointer;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 3px;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border: 2px solid $main-color;
+            border-radius: 8px;
+            margin-right: 16px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% 50%;
+          }
+      }
+      &__btn{
+        margin-top: 24px;
+        padding: 24px 40px;
+      }
+            
+}

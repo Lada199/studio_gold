@@ -1,0 +1,34 @@
+@import 'libs/font';
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/animate.min';
+
+
+@import 'base/variables';
+
+
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/title';
+@import 'blocks/button';
+@import 'blocks/about';
+@import 'blocks/advantages';
+@import 'blocks/questions';
+@import 'blocks/conditions';
+@import 'blocks/change';
+@import 'blocks/form';
+@import 'blocks/footer';
+@import 'blocks/media';
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Gilroy Thin', sans-serif;
+}
+
+.container {
+    max-width: 1679px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
